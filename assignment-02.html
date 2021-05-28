@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CS230 Assignment 2 - Emmett Mulroy</title>
+    <link rel="stylesheet" type="text/css" href="assignment-02.css">
+</head>
+<body>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+<div id="gameOver" class="gameOver">    <!--displays game over alert-->
+    <p><b></b></p>
+</div>
+
+<div class="game">
+    <div id="green"
+         onclick="colourClicked('green')"
+         class="lights"></div>
+    <div id="red"
+         onclick="colourClicked('red')"
+         class="lights"></div>
+    <div id="yellow"
+         onclick="colourClicked('yellow')"
+         class="lights"></div>
+    <div id="blue"
+         onclick="colourClicked('blue')"
+         class="lights"></div>
+
+    <div id="controls">
+        <div class="flex-container">
+            <div class="highScore"
+                 id="highScore">00</div>
+            <button class="startButton"
+                    onClick="newPlay()">START</button>
+            <div class="count">00</div>
+        </div>
+        <div id="led"></div>
+    </div>
+</div>
+<script src="assignment-02.js"></script>
+
+</body>
+</html>
